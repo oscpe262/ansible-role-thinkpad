@@ -1,9 +1,10 @@
 # Ansible role 'ansible-role-thinkpad'
 
-An Ansible role for setting up something for whatever purpose.
+An Ansible role for Lenovo Thinkpads quirks. Currently only Fedora tested and support for touchpad, but should be distro agnostic.
 
 ## Requirements
-
+- Fedora (only 27+ tested)
+- Lenovo Thinkpad (tested on T470s)
 ## Role Variables
 | Variable		| Default		| Comments (type) |
 | :---			| :---			| :---		  |
