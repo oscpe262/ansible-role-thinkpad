@@ -1,0 +1,11 @@
+## roles/ansible-role-thinkpad/tasks/main.yml
+# vim:ft=ansible:
+---
+- name: Xorg touchpad
+  template:
+    src: 30-touchpad.conf.j2
+    dest: /etc/X11/xorg.conf.d/30-touchpad.conf.j2
+    owner: root
+    group: root
+    mode: 0644
+...

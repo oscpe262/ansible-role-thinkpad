@@ -1,0 +1,4 @@
+## roles/ansible-role-thinkpad/handlers/main.yml
+# vim:ft=ansible:
+---
+...
