@@ -4,7 +4,15 @@
 - name: Xorg touchpad
   template:
     src: 30-touchpad.conf.j2
-    dest: /etc/X11/xorg.conf.d/30-touchpad.conf.j2
+    dest: /etc/X11/xorg.conf.d/30-touchpad.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Intel Graphics tearing-removal (xorg)
+  template:
+    src: 20-intel.conf.j2
+    dest: /etc/X11/xorg.conf.d/20-intel.conf
     owner: root
     group: root
     mode: 0644
